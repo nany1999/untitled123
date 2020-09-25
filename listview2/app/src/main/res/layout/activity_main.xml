@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+    <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/add"
+            android:text="添加记录"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete"
+            android:text="删除记录"/>
+
+    <include android:id="@+id/talk_empty"
+             layout="@layout/listview_empty"/>
+    <ListView android:layout_width="match_parent" android:layout_height="match_parent"
+              android:id="@+id/listview"
+              android:text="213"
+    />
+
+    />
+
+
+</LinearLayout>
