@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     document.createElement("yshero")
+ </script>
+ <style>
+     yshero{
+         display: block;
+         background-color: #ddd;
+         padding:50px;
+         font-size: 12px;
+     }
+ </style>
+<yshero>我是一个新元素</yshero>
+
+ <canvas id="canvas-1" width="200" height="100"
+         style="border:1px solid #000000;">
+
+ </canvas>
+<script>
+    var c=document.getElementById("canvas-1");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#FF0000";
+    ctx.fillRect(0,0,150,75);
+
+    var c   = document.getElementById("canvas-1");
+    var ctx = c.getContext("2d");
+    ctx. moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+
+    var c=document.getElementById("canvas-1");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+
+    var c= document.getElementById("canvas-1");
+    var ctx = c.getContext("2d");
+    ctx.strokeText("Hello World",100,100);
+    ctx.font="50px";
+
+    var  c= document.getElementById("canvas-1");
+    var ctx = c.getContext("2d");
+    var grd= ctx.createLinearGradient(0,0,200,0)
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    ctx.fillStyle=grd;
+    ctx.fillRect(10,10,150,80);
+</script>
+ <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <mrow>
+         <mrow>
+
+             <msup>
+                 <mi>x</mi>
+                 <mn>2</mn>
+             </msup>
+             <mo>+</mo>
+             <mrow>
+                 <mn>4</mn>
+                 <mo>⁢</mo>
+                 <mi>x</mi>
+             </mrow>
+             <mo>+</mo>
+             <mn>4</mn>
+         </mrow>
+         <mo>=</mo>
+         <mn>0</mn>
+     </mrow>
+ </math>
+
+
+</body>
+</html>

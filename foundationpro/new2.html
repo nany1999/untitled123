@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.bootcss.com/foundation/5.5.3/css/foundation.min.css">
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/foundation/5.5.3/js/foundation.min.js"></script>
+<script src="https://cdn.bootcss.com/foundation/5.5.3/js/vendor/modernizr.js"></script>
+
+<div style="padding:20px;">
+    <h2>下拉菜单按钮</h2>
+    <a href="#" data-dropdown="id01" class="button dropdown">Dropdown Button</a>
+    <ul id="id01" data-dropdown-content class="f-dropdown">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+</div>
+
+<script>
+    $(document).ready(function() {$(document).foundation();})
+</script>
+
+<!--<a href="#" data-dropdown="id01" class="button split">Dropdown Button</a>-->
+<button class="button split">Split Button<span data-dropdown="id01"></span></button>
+<div id="id01" data-dropdown-content class="f-dropdown medium content">
+    <h4>Paris Title</h4>
+    <p>Some text.. some text..</p>
+    <img src=".idea/WechatIMG1036.png" alt="pic" width="400" height="300">
+    <p>hello .yelp</p>
+</div>
+<ul class="pricing-table">
+    <li class="title">Basic</li>
+    <li class="price">$19.99</li>
+    <li class="description">Great for small business</li>
+    <li class="bullet-item">24/7 Support</li>
+    <li class="bullet-item">15GB Storage</li>
+    <li class="bullet-item">1GB Bandwidth</li>
+    <li class="cta-button"><a class="button" href="#">Buy</a></li>
+</ul>
+<ul class="pricing-table">
+    <li class="title">pen</li>
+    <li class="price">$2.0</li>
+    <li class="description">this is a black pen</li>
+    <li class="bullet-item">black</li>
+    <li class="cta-button"><a class=button href="#">BUY</a></li>
+</ul>
+<ul class="side-nav">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+</ul>
+<div class="switch round">
+    <input id="mySwitch" type="checkbox" />
+    <label for="mySwitch">123</label>
+</div>
+
+<button type="button" class="button" data-reveal-id="myModal">打开模态框</button>
+<div id="myModal" class="reveal-modal full" data-reveal>
+    <h2>Heading in Modal.</h2>
+    <p>Some text in the modal.</p>
+    <p>Some text in the modal.</p>
+    <a class="close-reveal-modal">&times;</a>
+</div>
+
+<script>
+    $(document).ready(function() {$(document).foundation();})
+</script>
