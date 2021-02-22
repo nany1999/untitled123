@@ -1,0 +1,16 @@
+<div id="result"></div>
+<script>
+    if(typeof(EventSource)!=="undefined")
+    {
+        var source=new EventSource("/dy/html/sse");
+        source.onmessage=function(event)
+        {
+            document.getElementById("result").innerHTML+=event.data + "<br>";
+            document.console("result");
+        };
+    }
+    else
+    {
+        document.getElementById("result").innerHTML="抱歉，你的浏览器不支持 server-sent 事件...";
+    }
+</script>

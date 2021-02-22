@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<label>
  <script>
      document.createElement("yshero")
  </script>
@@ -73,8 +73,82 @@
          <mo>=</mo>
          <mn>0</mn>
      </mrow>
+
  </math>
 
 
-</body>
+ <p id="demo">点击按钮获取您当前坐标（可能需要比较长的时间获取）：</p>
+ <button onclick="getLocation()">点我</button>
+ <script>
+     var x=document.getElementById("demo");
+     function getLocation()
+     {
+         if (navigator.geolocation)
+         {
+             navigator.geolocation.getCurrentPosition(showPosition);
+         }
+         else
+         {
+             x.innerHTML="该浏览器不支持获取地理位置。";
+         }
+     }
+
+     function showPosition(position)
+     {
+         x.innerHTML="纬度: " + position.coords.latitude +
+             "<br>经度: " + position.coords.longitude;
+     }
+ </script>
+ <label> 选择颜色<input type="color" name="favor"></label>
+ <br>
+  <label><input type="datetime-local" name="time"></label>
+
+  <label><input type="email" name="time1"></label>
+  <label><input type="url" name="time2"></label>
+
+    <output name="favor"></output>
+    <output name="time"></output>
+    <output name="time2"></output>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100
+        +<input type="number" id="b" value="50">
+        =<output name="x" for="a b"></output>
+    </form>
+
+    <section>
+        <h1>2021-2-19</h1>
+        <p>今天天气晴朗，去了大马弄市场购物</p>
+    </section>
+
+    <section>
+        <h1>2021-2-19</h1>
+        <p>今天天气晴朗，下午睡了1个小时</p>
+    </section>
+
+    <article>
+        <h1>是金子总会发光</h1>
+        <p>This is golden </p>
+    </article>
+    <nav>
+        <a href="./codeStyles/H5">HTML 5</a> |
+        <a href="/new2">CSS 3</a> |
+        <a href="/yufei/javascript">JavaScript</a> |
+        <a href="/yufei/jquery">jQuery</a>
+    </nav>
+
+    </body>
+    <div id="result"></div>
+    <script>
+        if(typeof(Storage)!=="undefined")
+        {
+            localStorage.sitename="南彩彩";
+            document.getElementById("result").innerHTML="网站名：" + localStorage.sitename;
+        }
+        else
+        {
+            document.getElementById("result").innerHTML="对不起，你的浏览器不支持 web 存储";
+        }
+    </script>
+
+
 </html>
